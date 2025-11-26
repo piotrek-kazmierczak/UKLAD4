@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Układ Złożony</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 800px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+        }
+
+        .header {
+            height: 60px;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .images-section {
+            height: 80px;
+            border-bottom: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .main {
+            display: flex;
+            flex-grow: 1; /* Wypełnia resztę wysokości */
+            border-bottom: 1px solid black;
+        }
+
+        .left-section {
+            width: 40%;
+            border-right: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .right-wrapper {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav-block {
+            height: 50%;
+            width: 100%;
+            border-bottom: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .right-content-block {
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .footer {
+            height: 50px;
+            border-bottom: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">Blok nagłówkowy</div>
+        
+        <div class="images-section">Blok sekcji obrazów</div>
+        
+        <div class="main">
+            <div class="left-section">Blok sekcji lewej</div>
+            
+            <div class="right-wrapper">
+                <div class="nav-block">Blok nawigacyjny</div>
+                <div class="right-content-block">Blok sekcji prawej</div>
+            </div>
+        </div>
+
+        <div class="footer">Blok stopki</div>
+    </div>
+
+</body>
+</html>
